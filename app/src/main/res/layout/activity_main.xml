@@ -18,6 +18,7 @@
         android:id="@+id/floatingActionButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:contentDescription="button"
         android:clickable="true"
         android:layout_marginBottom="20dp"
         android:layout_marginEnd="20dp"
