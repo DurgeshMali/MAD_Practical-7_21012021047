@@ -1,10 +1,12 @@
 package com.example.mad_practical_7_21012021047
 
+import android.content.Intent
 import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.MediaController
 import android.widget.VideoView
+import com.google.android.material.floatingactionbutton.FloatingActionButton
 
 class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -19,8 +21,12 @@ class MainActivity : AppCompatActivity() {
         myVideoView.setVideoURI(uri)
         myVideoView.requestFocus()
         myVideoView.start()
+
+        val button: FloatingActionButton =findViewById(R.id.floatingActionButton)
+        button.setOnClickListener {
+            Intent(this@MainActivity, YouTubeActivity::class.java).also {
+                startActivity(it)
+            }
+        }
     }
-
-
-
 }
