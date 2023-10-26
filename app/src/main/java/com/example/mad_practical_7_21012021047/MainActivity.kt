@@ -30,12 +30,5 @@ class MainActivity : AppCompatActivity() {
                 startActivity(it)
             }
         }
-
-//        val button1: FloatingActionButton =findViewById(R.id.floatingActionButton2)
-//        button1.setOnClickListener {
-//            Intent(this@MainActivity, MainActivity::class.java).also {
-//                startActivity(it)
-//            }
-//        }
     }
 }

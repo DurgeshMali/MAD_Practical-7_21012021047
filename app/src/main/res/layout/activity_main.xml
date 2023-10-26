@@ -24,7 +24,7 @@
         android:layout_marginEnd="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:srcCompat="@android:drawable/ic_dialog_dialer" />
+        android:src="@drawable/baseline_image_24"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
